@@ -917,13 +917,17 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        //Button = + �
+        //Button = + §
         if (estadoShift) {
             tela += "+";
+        } else if (estadoAlt) {
+            tela += "§";
         } else {
             tela += "=";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -948,13 +952,17 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        //Button [ { �
+        //Button [ { ª
         if (estadoShift) {
             tela += "{";
-        } else {
+        } else if (estadoAlt) {
+            tela += "ª";
+        }  else {
             tela += "[";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -968,13 +976,17 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
-        //Button ] } �
+        //Button ] } º
         if (estadoShift) {
             tela += "}";
+        } else if (estadoAlt) {
+            tela += "º";
         } else {
             tela += "]";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
@@ -1008,13 +1020,17 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-        //Button / ? �
+        //Button / ? °
         if (estadoShift) {
             tela += "?";
+        } else if (estadoAlt) {
+            tela += "°";
         } else {
             tela += "/";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
@@ -1054,6 +1070,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "a";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
@@ -1064,6 +1082,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "b";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
@@ -1074,6 +1094,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "c";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
@@ -1084,6 +1106,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "d";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
@@ -1094,6 +1118,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "e";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
@@ -1104,6 +1130,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "f";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
@@ -1114,6 +1142,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "g";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
@@ -1124,6 +1154,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "h";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
@@ -1134,6 +1166,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "i";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
@@ -1144,6 +1178,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "j";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
@@ -1154,6 +1190,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "k";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
@@ -1164,6 +1202,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "l";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
@@ -1174,6 +1214,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "m";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
@@ -1184,6 +1226,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "n";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
@@ -1194,6 +1238,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "o";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
@@ -1204,6 +1250,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "p";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -1214,6 +1262,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "q";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -1224,6 +1274,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "r";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
@@ -1234,6 +1286,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "s";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -1244,6 +1298,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "t";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
@@ -1254,6 +1310,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "u";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
@@ -1264,6 +1322,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "v";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
@@ -1274,6 +1334,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "w";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
@@ -1284,6 +1346,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "x";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
@@ -1294,6 +1358,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "y";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
@@ -1304,6 +1370,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "z";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
@@ -1314,6 +1382,8 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
             tela += "ç";
         }
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
@@ -1321,7 +1391,9 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
         int numeroAsc = KeyEvent.VK_TAB;
         char character = (char) numeroAsc;
         tela += character;
-        jTextPane1.setText(tela);        
+        jTextPane1.setText(tela);  
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
@@ -1359,18 +1431,24 @@ public class tecladoVirtual_Simulador extends javax.swing.JFrame {
         }
         tela = telaApagada;
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         //Button Enter
         tela += "\n";
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
         //Button BackSpace
         tela += " ";
         jTextPane1.setText(tela);
+        estadoAlt = false;
+        jToggleButton3.setSelected(false);
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
